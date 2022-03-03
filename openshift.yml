@@ -3,19 +3,19 @@
   hosts: all
   name: "apply common configuration to all nodes"
   remote_user: root
-  project_code: gns3212
+  project_code: xxxxxx
   roles: 
     - common
 - 
   hosts: webservers
   name: "configure and deploy the webservers and application code"
   remote_user: root
-  project_name: gnspro
+  project_name: xxxxxx
   roles: 
     - web
 - 
   hosts: dbservers
   name: "deploy MySQL and configure the databases"
   remote_user: root
-  project_code: gns3212
+  project_code: xxxxxx
   roles: 
