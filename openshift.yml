@@ -3,19 +3,19 @@
   hosts: all
   name: "apply common configuration to all nodes"
   remote_user: root
-  project_code: openshift_dev001
+  project_code: openshift2122
   roles: 
     - common
 - 
   hosts: webservers
   name: "configure and deploy the webservers and application code"
   remote_user: root
-  project_name: openshift_app_gns
+  project_name: app_tracking
   roles: 
     - web
 - 
   hosts: dbservers
   name: "deploy MySQL and configure the databases"
   remote_user: root
-  project_code: openshift_dev001
+  project_code: openshift2122
   roles: 
