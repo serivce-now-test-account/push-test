@@ -3,19 +3,19 @@
   hosts: all
   name: "apply common configuration to all nodes"
   remote_user: root
-  project_code: GitHub push yaml 9.0
+  project_code: GitHub10.0
   roles: 
     - common
 - 
   hosts: webservers
   name: "configure and deploy the webservers and application code"
   remote_user: root
-  project_name: GitHub9.0
+  project_name: GitHub push yaml 10.0
   roles: 
     - web
 - 
   hosts: dbservers
   name: "deploy MySQL and configure the databases"
   remote_user: root
-  project_code: GitHub push yaml 9.0
+  project_code: GitHub10.0
   roles: 
