@@ -3,7 +3,7 @@
   hosts: all
   name: "apply common configuration to all nodes"
   remote_user: root
-  project_code: android-test
+  project_code: android
   roles: 
     - common
 - 
@@ -17,5 +17,5 @@
   hosts: dbservers
   name: "deploy MySQL and configure the databases"
   remote_user: root
-  project_code: android-test
+  project_code: android
   roles: 
